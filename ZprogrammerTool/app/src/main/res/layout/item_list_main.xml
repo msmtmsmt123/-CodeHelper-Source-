@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:transitionName="element_bg">
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:text="Title"
+        android:textAppearance="@style/Text"
+        android:textColor="#0084FF"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/list_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Message"
+        android:textAppearance="@style/Text"
+        android:textColor="#8C8C8C"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/list_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_message"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="User"
+        android:textAppearance="@style/Text"
+        android:textColor="#8C8C8C"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/list_message"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Time"
+        android:textAppearance="@style/Text"
+        android:textColor="#8C8C8C"
+        android:textSize="10sp" />
+
+</RelativeLayout>
+

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PreferenceScreen xmlns:android='http://schemas.android.com/apk/res/android'>
+    <PreferenceCategory android:title='设置'>
+
+        <CheckBoxPreference
+            android:defaultValue='true'
+            android:key='update'
+            android:summaryOff='关闭'
+            android:summaryOn='开启'
+            android:title='是否开启自动更新' />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title='其他'>
+
+        <EditTextPreference
+            android:defaultValue=''
+            android:dialogTitle='输入反馈内容'
+            android:key='feedback'
+            android:title='反馈' />
+
+        <com.zprogrammer.tool.view.TextViewPreference
+            android:dialogLayout="@layout/textview"
+            android:dialogTitle="关于作者:"
+            android:icon="@drawable/about"
+            android:key="about"
+            android:title="关于作者" />
+
+        <Preference
+            android:key="notices"
+            android:summary="@string/pref_summary_notices"
+            android:title="@string/notices_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

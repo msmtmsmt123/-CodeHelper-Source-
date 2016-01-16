@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/text_bg"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+    </android.support.v4.view.ViewPager>-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    <com.malinskiy.superrecyclerview.SuperRecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_empty="@layout/emptyview"
+            app:layout_moreProgress="@layout/view_more_progress"
+            app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+            app:recyclerClipToPadding="false"
+            app:scrollbarStyle="outsideOverlay" />-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@mipmap/ic_create_white_48dp"
+        fab:fab_colorNormal="@color/theme"
+        fab:fab_colorPressed="@color/theme_dark"
+        fab:fab_colorRipple="@color/theme_dark" />
+
+</FrameLayout>
+
+    <!--	<com.zprogrammer.tool.view.ArcMenu
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            zzy:radius="100dp"
+            zzy:position="right_bottom"
+            android:id="@+id/mainArcMenu1">
+
+            <ImageView
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:background="@drawable/composer_button"/>
+
+            <ImageView
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:background="@drawable/ic_find"
+                android:tag="ArcMenuItem1"/>
+
+            <ImageView
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:tag="ArcMenuItem2"
+                android:background="@drawable/ic_new"/>
+
+            <ImageView
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:tag="ArcMenuItem3"
+                android:background="@drawable/ic_setting"/>
+
+        </com.zprogrammer.tool.view.ArcMenu>--><!--
+</RelativeLayout>-->
+
