@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<attr name="position">
+		<enum name="left_top" value="0" />
+		<enum name="left_bottom" value="1" />
+		<enum name="right_top" value="2" />
+		<enum name="right_bottom" value="3" />
+	</attr>
+	<attr name="radius" format="dimension"/>
+	<attr name="padding_margin" format="dimension"/>
+	<attr name="type">
+		<enum name="horizontal" value="0" />
+		<enum name="vertical" value="1" />
+	</attr>
+	
+	<declare-styleable name="ZMenu">
+		<attr name="padding_margin" />
+		<attr name="type" />
+		<attr name="position" />
+	</declare-styleable>
+	<declare-styleable name="ArcMenu">
+		<attr name="position" />
+		<attr name="radius" />
+	</declare-styleable>
+	<string-array name="gravity">
+		<item>居左</item>
+		<item>居中</item>
+		<item>居右</item>
+	</string-array>
+	
+	<string-array name="gravitys">
+		<item>局左</item>
+		<item>居中</item>
+		<item>居右</item>
+	</string-array>
+</resources>

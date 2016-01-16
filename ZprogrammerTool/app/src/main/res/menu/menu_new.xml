@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+	<item android:id="@+id/action_new"
+		android:icon="@mipmap/ic_send_white_36dp"
+		android:title="上传代码"
+		app:showAsAction="ifRoom" />
+    
+</menu>
